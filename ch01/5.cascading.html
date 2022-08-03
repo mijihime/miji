@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>cascading</title>
+    <style>
+    /* 과제: table element 에 금자색깔: 파랑 style을 적용하라.*/
+        table{
+            color: blue;
+        }
+        /*부모에서 자식까지 스타일이 좌악 내려옴 그게 cascading, 곧 상속*/
+        td.kor {
+            color: red;
+        }
+        /*override효과*/
+    </style>
+</head>
+<body>
+    <table>
+        <caption>인사</caption>
+        <tr><td class='kor'>안녕</td><td>한국</td></tr>
+        <tr><td>Hello</td><td>미국</td></tr>
+    </table>
+</body>
+</html>
