@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>relative</title>
+    <style>
+        div {
+            padding: 3rem;
+            float: left;
+        }
+
+        .one {
+            background: red;
+        }
+
+        .two {
+            background: orange;
+            position: relative; 
+            /*relative는 상대적인건데 원점의 위치는 static의 원점 위치?*/
+            left: 2rem;
+            top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

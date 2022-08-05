@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title></title>
+    <style>
+        div.container {
+            background: red;
+            width: 3rem;
+            padding: 3rem;
+            margin: 1rem;
+            position: relative;
+        }
+
+        div.box {
+            background: black;
+            padding: 2rem;
+            /* 과제: 아래 세 속성이 적용 되도록, container 를 styling 하라. */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        div.box:active {
+            transform: translate(3rem, 1rem);
+        }
+
+        div.three {
+            perspective: 10rem;
+        }
+
+        div.three div:active{
+            transform: translate3d(3rem, 1rem, 5rem);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <div class="container three">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

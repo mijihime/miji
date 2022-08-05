@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>rotate</title>
+    <style>
+        .container {
+            background: #9bb7da;
+            width: 10rem;
+            height: 10rem;
+            padding: 2rem;
+            margin: 1rem;
+            position: relative;
+            float: left;
+        }
+
+        .box {
+            background: #0f4c81;
+            padding: 2rem;
+            position: absolute;
+            left: 35%;
+            top: 35%;
+        }
+
+        .box:hover {
+            transform: rotate(20deg); /*오른쪽으로 20도*/
+        }
+
+        .box:active {
+            transform: rotate(-20deg);
+        }
+
+        .three {
+            perspective: 10rem;
+        }
+
+        .three .box:hover {
+            transform: rotateX(45deg);
+        }
+
+        .three .box:active {
+            transform: rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <div class="container three">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
